@@ -20,7 +20,7 @@ public class StartedStopwatch implements State {
         stopwatch.getCheckpoints()[2] = stopwatch.getOverall();
         for (int i = 0; i < stopwatch.getCheckpoints().length; i++) {
             if(stopwatch.getCheckpoints()[i] != null) {
-                System.out.println("Показания " + (i + 1) + "-й точки сохранения: " + stopwatch.getCheckpoints()[i]);
+                System.out.println("Показания " + (i + 1) + "-й точки сохранения: " + stopwatch.getCheckpoints()[i].getMinute() + ":" + stopwatch.getCheckpoints()[i].getSecond() + ":" + stopwatch.getCheckpoints()[i].getNano());
             }
         }
     }
